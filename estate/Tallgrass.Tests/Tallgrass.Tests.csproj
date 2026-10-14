@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- SPECIMEN: read by `legacy map`, not built by this repository. The entire automated test suite, 2011-2025. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Tests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Business\Tallgrass.Business.csproj" />
+  </ItemGroup>
+</Project>

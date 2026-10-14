@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- SPECIMEN: read by `legacy map`, not built by this repository. Tariffs and rate calculation. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Rates</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Data\Tallgrass.Data.csproj" />
+  </ItemGroup>
+</Project>

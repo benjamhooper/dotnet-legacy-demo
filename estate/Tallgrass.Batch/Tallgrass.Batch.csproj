@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- SPECIMEN: read by `legacy map`, not built by this repository. Nightly and month-end jobs. Runs as a Windows scheduled task on TG-BATCH02. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Batch</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Data\Tallgrass.Data.csproj" />
+    <ProjectReference Include="..\Tallgrass.Business\Tallgrass.Business.csproj" />
+    <ProjectReference Include="..\Tallgrass.Billing\Tallgrass.Billing.csproj" />
+    <ProjectReference Include="..\Tallgrass.Payments\Tallgrass.Payments.csproj" />
+    <ProjectReference Include="..\Tallgrass.Notifications\Tallgrass.Notifications.csproj" />
+    <ProjectReference Include="..\Tallgrass.Reports\Tallgrass.Reports.csproj" />
+    <ProjectReference Include="..\Tallgrass.Rates\Tallgrass.Rates.csproj" />
+  </ItemGroup>
+</Project>

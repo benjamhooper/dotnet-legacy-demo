@@ -1,0 +1,10 @@
+{
+  // Decided with Billing Ops and Regulatory, 2026-09. The tariff filing defines a
+  // 30-day billing month; per-day rounding and the $1.00 write-off are what
+  // customers have been billed since 2013, and changing them is a separate,
+  // announced tariff change, not a side effect of a rewrite.
+  "rounding": "PerDay",
+  "monthBasis": "Thirty",
+  "smallBalanceWriteOffUnder": 1.00,
+  "decision": "BILL-2291: keep legacy proration behavior; revisit with 2027 rate case"
+}

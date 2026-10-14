@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    The replacement for dbo.usp_ProrateFinalBill. New project, new namespace, no
+    reference to the estate at all: the strangler grows next to the old tree, not
+    inside it. Everything the old code did implicitly is an explicit, named
+    ProrationPolicy option here.
+  -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.FinalBill</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>

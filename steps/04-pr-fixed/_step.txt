@@ -1,0 +1,1 @@
+Same report, second push. The clock and the threshold are constructor parameters; it no longer needs BillingManager at all. Nothing else in the estate changed.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPECIMEN: read by `legacy map`, not built by this repository. Desktop tool Billing Ops uses to repair production data by hand. Never ported. -->
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0C3E9B7A-2D41-4F6E-8A5B-7C9D1E3F5A20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tallgrass.Admin.Fixer</RootNamespace>
+    <AssemblyName>Fixer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="GridPlus.WinForms, Version=2.1.0.0">
+      <HintPath>..\lib\GridPlus 2.1\GridPlus.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="XlsWriter">
+      <HintPath>..\lib\XlsWriter 5.7\XlsWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfForge">
+      <HintPath>..\lib\PdfForge 3.5\PdfForge.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FixerForm.cs"><SubType>Form</SubType></Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj"><Name>Tallgrass.Common</Name></ProjectReference>
+    <ProjectReference Include="..\Tallgrass.Data\Tallgrass.Data.csproj"><Name>Tallgrass.Data</Name></ProjectReference>
+    <ProjectReference Include="..\Tallgrass.Business\Tallgrass.Business.csproj"><Name>Tallgrass.Business</Name></ProjectReference>
+    <ProjectReference Include="..\Tallgrass.Billing\Tallgrass.Billing.csproj"><Name>Tallgrass.Billing</Name></ProjectReference>
+    <ProjectReference Include="..\Tallgrass.Payments\Tallgrass.Payments.csproj"><Name>Tallgrass.Payments</Name></ProjectReference>
+    <ProjectReference Include="..\Tallgrass.Rates\Tallgrass.Rates.csproj"><Name>Tallgrass.Rates</Name></ProjectReference>
+    <ProjectReference Include="..\Tallgrass.Reports\Tallgrass.Reports.csproj"><Name>Tallgrass.Reports</Name></ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

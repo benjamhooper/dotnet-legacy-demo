@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- "Business" was meant to be temporary. It has 9 projects depending on it. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Business</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Data\Tallgrass.Data.csproj" />
+  </ItemGroup>
+</Project>

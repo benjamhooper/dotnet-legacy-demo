@@ -1,0 +1,1 @@
+A "harmless" tidy-up: somebody made the rounding explicit, the way finance describes it. Rebuild and re-run the characterization.

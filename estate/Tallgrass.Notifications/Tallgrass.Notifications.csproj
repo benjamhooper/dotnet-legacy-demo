@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- SPECIMEN: read by `legacy map`, not built by this repository. Email, SMS and printed notices. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Notifications</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Business\Tallgrass.Business.csproj" />
+  </ItemGroup>
+</Project>

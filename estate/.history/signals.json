@@ -1,0 +1,23 @@
+{
+  "_comment": "Things source code cannot tell you. Collected by talking to Billing Ops, the service desk, and the product owner in week one.",
+  "asOf": "2026-09-01",
+  "projects": {
+    "Tallgrass.Billing":               { "incidents12mo": 7, "criticality": "high",   "roadmap": "Q1: new late-fee tariff; Q2: payment arrangements v2", "usage": "every bill, every night" },
+    "Tallgrass.Integrations.Meter":    { "incidents12mo": 1, "criticality": "high",   "roadmap": "vendor format v8 in Q4",                           "usage": "2.1M reads/day" },
+    "Tallgrass.Rates":                 { "incidents12mo": 2, "criticality": "high",   "roadmap": "time-of-use rates, 2027",                            "usage": "every bill" },
+    "Tallgrass.Payments":              { "incidents12mo": 3, "criticality": "high",   "roadmap": "",                                                    "usage": "41k payments/month" },
+    "Tallgrass.Web":                   { "incidents12mo": 2, "criticality": "medium", "roadmap": "",                                                    "usage": "120 CSRs" },
+    "Tallgrass.Reports":               { "incidents12mo": 0, "criticality": "medium", "roadmap": "",                                                    "usage": "30 reports, monthly" },
+    "Tallgrass.Admin.Fixer":           { "incidents12mo": 0, "criticality": "low",    "roadmap": "",                                                    "usage": "212 manual data repairs in 12 months" },
+    "Tallgrass.CustomerPortal.Classic":{ "incidents12mo": 0, "criticality": "low",    "roadmap": "",                                                    "usage": "0 sessions in 90 days", "replacedBy": "SaaS customer portal (2024)" },
+    "Tallgrass.Batch":                 { "incidents12mo": 1, "criticality": "high",   "roadmap": "",                                                    "usage": "nightly" },
+    "Tallgrass.Notifications":         { "incidents12mo": 0, "criticality": "medium", "roadmap": "",                                                    "usage": "90k notices/month" },
+    "Tallgrass.Common":                { "incidents12mo": 0, "criticality": "high",   "roadmap": "",                                                    "usage": "everything" },
+    "Tallgrass.Data":                  { "incidents12mo": 0, "criticality": "high",   "roadmap": "",                                                    "usage": "everything" },
+    "Tallgrass.Business":              { "incidents12mo": 1, "criticality": "high",   "roadmap": "",                                                    "usage": "everything" },
+    "Tallgrass.Tests":                 { "incidents12mo": 0, "criticality": "low",    "roadmap": "",                                                    "usage": "4 tests run, 2 ignored" }
+  },
+  "procedures": {
+    "dbo.usp_ProrateFinalBill":        { "incidents12mo": 4, "roadmap": "move-out flow rebuild, Q1", "usage": "3,100 final bills/month" }
+  }
+}

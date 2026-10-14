@@ -1,0 +1,1 @@
+Every quirk shadow found is now a named decision in the policy file, with a ticket. The one difference we are choosing NOT to keep has an owner and an expiry date.

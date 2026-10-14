@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- SPECIMEN: read by `legacy map`, not built by this repository. AMI meter-read import. Rewritten 2022; the newest code in the estate. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Integrations.Meter</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Data\Tallgrass.Data.csproj" />
+  </ItemGroup>
+</Project>

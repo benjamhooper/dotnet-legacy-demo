@@ -1,0 +1,1 @@
+Parameterize Constructor. BillingManager() still exists and still does exactly what it did; a second constructor takes the two things CalculateLateFee reaches for. The characterization test now goes through the seam.

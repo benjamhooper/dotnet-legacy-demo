@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>legacy</AssemblyName>
+    <RootNamespace>LegacyCtl</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Shared\ConsoleOut.cs" Link="Shared\ConsoleOut.cs" />
+    <Compile Include="..\Shared\HtmlReport.cs" Link="Shared\HtmlReport.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The tool reads the estate as text. The only compiled code it references is the strangler. -->
+    <ProjectReference Include="..\..\modern\Tallgrass.FinalBill\Tallgrass.FinalBill.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+{
+  // What the tariff document says. Written from the spec, not from production.
+  "rounding": "Once",
+  "monthBasis": "Actual",
+  "smallBalanceWriteOffUnder": null,
+  "decision": "none yet"
+}

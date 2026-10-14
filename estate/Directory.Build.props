@@ -1,0 +1,19 @@
+<Project>
+  <!--
+    The estate: a fictional utility-billing system, "Tallgrass", first committed
+    in 2011 on .NET Framework 3.5 and carried forward ever since. It is modeled on
+    patterns from real enterprise engagements, with every name, number and rule
+    invented. Nothing here is client code.
+
+    Four projects are actually compiled (Common, Data, Business, Billing) because
+    the demos run their code. The rest are specimens: they exist to be *read* by
+    `legacy map`, `legacy seams` and `legacy triage`, the way you read a codebase
+    in your first week. They are not in DotnetLegacyDemo.sln.
+  -->
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+  <PropertyGroup>
+    <!-- 2011 code does not know what a nullable reference type is. -->
+    <Nullable>disable</Nullable>
+    <NoWarn>$(NoWarn);CS0168;CS0219;CS0162;CS0618;CA1050</NoWarn>
+  </PropertyGroup>
+</Project>

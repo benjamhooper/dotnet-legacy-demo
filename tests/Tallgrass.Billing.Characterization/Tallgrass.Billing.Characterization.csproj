@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Characterization ("golden master") tests for BillingManager.CalculateLateFee.
+
+    A console app, not an xunit project: this repository has zero NuGet
+    dependencies on purpose (see NuGet.config). The harness in Program.cs gives us
+    the two things that matter - a readable report and a non-zero exit code.
+
+    LateFeeCharacterization.cs is the file the demo swaps. The first version is the
+    test you write on day one; it compiles, and it cannot run (demo 2).
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>characterize</AssemblyName>
+    <RootNamespace>Tallgrass.Billing.Characterization</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\src\Shared\ConsoleOut.cs" Link="Shared\ConsoleOut.cs" />
+    <Compile Include="..\..\src\Shared\HtmlReport.cs" Link="Shared\HtmlReport.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\estate\Tallgrass.Billing\Tallgrass.Billing.csproj" />
+  </ItemGroup>
+
+</Project>

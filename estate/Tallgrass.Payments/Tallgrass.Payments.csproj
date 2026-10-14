@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- SPECIMEN: read by `legacy map`, not built by this repository. Card, ACH and lockbox payments. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Payments</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Data\Tallgrass.Data.csproj" />
+    <ProjectReference Include="..\Tallgrass.Business\Tallgrass.Business.csproj" />
+    <ProjectReference Include="..\Tallgrass.Billing\Tallgrass.Billing.csproj" />
+  </ItemGroup>
+</Project>

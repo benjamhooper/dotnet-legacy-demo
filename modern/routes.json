@@ -1,0 +1,14 @@
+{
+  "final-bill": {
+    "mode": "shadow",
+    "modernPercent": 0
+  },
+  "late-fee": {
+    "mode": "legacy",
+    "modernPercent": 0
+  },
+  "budget-billing": {
+    "mode": "legacy",
+    "modernPercent": 0
+  }
+}

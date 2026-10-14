@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Ported from Tallgrass.Common (v3.5) in 2017 (v4.8) and again last year (net10.0). -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Common</RootNamespace>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <!--
+      Everything targets net10.0 - including the "legacy" estate. That is the
+      point of the cold open: the target framework upgrade is already done and the
+      codebase is still a 2011 codebase. Changing the TFM is not modernization.
+
+      Older SDK on the presenter machine? No file edits needed:
+          $env:LEGACY_TFM = 'net8.0'; .\demo.ps1 verify
+    -->
+    <TargetFramework Condition="'$(LegacyTargetFramework)' != ''">$(LegacyTargetFramework)</TargetFramework>
+    <TargetFramework Condition="'$(TargetFramework)' == ''">net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <RollForward>Major</RollForward>
+
+    <!-- Warnings are errors in CI, not on a presenter's laptop. -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <!-- No package feeds, no restore over the network. See NuGet.config. -->
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+  </PropertyGroup>
+</Project>

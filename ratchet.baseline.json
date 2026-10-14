@@ -1,0 +1,83 @@
+{
+  "rules": {
+    "ambient-time": {
+      "Tallgrass.Admin.Fixer/FixerForm.cs": 12,
+      "Tallgrass.Batch/NightlyJobs.cs": 5,
+      "Tallgrass.Billing/BillingManager.cs": 43,
+      "Tallgrass.Business/AuditLog.cs": 1,
+      "Tallgrass.Business/BusinessRules.cs": 1,
+      "Tallgrass.Business/CustomerService.cs": 1,
+      "Tallgrass.Common/Utils.cs": 5,
+      "Tallgrass.CustomerPortal.Classic/MoveOut.aspx.cs": 1,
+      "Tallgrass.CustomerPortal.Classic/PayBill.aspx.cs": 1,
+      "Tallgrass.Data/AccountRepository.cs": 1,
+      "Tallgrass.Data/InvoiceRepository.cs": 1,
+      "Tallgrass.Data/Meter.cs": 1,
+      "Tallgrass.Data/Premise.cs": 1,
+      "Tallgrass.Data/RatePlan.cs": 1,
+      "Tallgrass.Data/ServiceOrder.cs": 1,
+      "Tallgrass.Notifications/NoticeSender.cs": 1,
+      "Tallgrass.Payments/PaymentProcessor.cs": 2,
+      "Tallgrass.Rates/RateEngine.cs": 1,
+      "Tallgrass.Reports/ReportGenerator.cs": 30,
+      "Tallgrass.Web/Controllers/AccountController.cs": 5,
+      "Tallgrass.Web/Controllers/AdminController.cs": 4,
+      "Tallgrass.Web/Controllers/BillingController.cs": 5
+    },
+    "static-db": {
+      "Tallgrass.Admin.Fixer/FixerForm.cs": 10,
+      "Tallgrass.Billing/BillingManager.cs": 1,
+      "Tallgrass.Business/AuditLog.cs": 1,
+      "Tallgrass.Business/CustomerService.cs": 1,
+      "Tallgrass.CustomerPortal.Classic/MoveOut.aspx.cs": 1,
+      "Tallgrass.Payments/PaymentProcessor.cs": 1,
+      "Tallgrass.Rates/RateEngine.cs": 1,
+      "Tallgrass.Reports/ReportGenerator.cs": 30
+    },
+    "ambient-config": {
+      "Tallgrass.Batch/NightlyJobs.cs": 1,
+      "Tallgrass.Billing/BillingManager.cs": 22,
+      "Tallgrass.Business/AuditLog.cs": 1,
+      "Tallgrass.Business/CustomerService.cs": 1,
+      "Tallgrass.Common/Db.cs": 1,
+      "Tallgrass.Common/Utils.cs": 2,
+      "Tallgrass.CustomerPortal.Classic/MoveOut.aspx.cs": 1,
+      "Tallgrass.CustomerPortal.Classic/PayBill.aspx.cs": 1,
+      "Tallgrass.Notifications/NoticeSender.cs": 2,
+      "Tallgrass.Payments/PaymentProcessor.cs": 2,
+      "Tallgrass.Reports/ReportGenerator.cs": 61,
+      "Tallgrass.Web/Controllers/AccountController.cs": 5,
+      "Tallgrass.Web/Controllers/AdminController.cs": 4,
+      "Tallgrass.Web/Controllers/BillingController.cs": 5
+    },
+    "singleton": {
+      "Tallgrass.Billing/BillingManager.cs": 1,
+      "Tallgrass.Payments/PaymentProcessor.cs": 2,
+      "Tallgrass.Web/Controllers/AccountController.cs": 5,
+      "Tallgrass.Web/Controllers/AdminController.cs": 4,
+      "Tallgrass.Web/Controllers/BillingController.cs": 5
+    },
+    "ambient-http": {
+      "Tallgrass.CustomerPortal.Classic/MoveOut.aspx.cs": 1,
+      "Tallgrass.CustomerPortal.Classic/PayBill.aspx.cs": 2,
+      "Tallgrass.Web/Controllers/AccountController.cs": 5,
+      "Tallgrass.Web/Controllers/AdminController.cs": 4,
+      "Tallgrass.Web/Controllers/BillingController.cs": 5
+    },
+    "newed-service": {
+      "Tallgrass.Batch/NightlyJobs.cs": 2,
+      "Tallgrass.Business/CustomerService.cs": 1,
+      "Tallgrass.CustomerPortal.Classic/PayBill.aspx.cs": 2,
+      "Tallgrass.Payments/PaymentProcessor.cs": 1,
+      "Tallgrass.Web/Controllers/AccountController.cs": 5,
+      "Tallgrass.Web/Controllers/AdminController.cs": 4,
+      "Tallgrass.Web/Controllers/BillingController.cs": 5
+    },
+    "static-http": {
+      "Tallgrass.Payments/PaymentProcessor.cs": 1
+    },
+    "sync-over-async": {
+      "Tallgrass.Payments/PaymentProcessor.cs": 1
+    }
+  }
+}

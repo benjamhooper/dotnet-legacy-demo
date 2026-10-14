@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!-- SPECIMEN: read by `legacy map`, not built by this repository. Internal CSR web app. WebForms until 2017, MVC 5 until last year, ASP.NET Core now. -->
+  <PropertyGroup>
+    <RootNamespace>Tallgrass.Web</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tallgrass.Common\Tallgrass.Common.csproj" />
+    <ProjectReference Include="..\Tallgrass.Data\Tallgrass.Data.csproj" />
+    <ProjectReference Include="..\Tallgrass.Business\Tallgrass.Business.csproj" />
+    <ProjectReference Include="..\Tallgrass.Billing\Tallgrass.Billing.csproj" />
+    <ProjectReference Include="..\Tallgrass.Payments\Tallgrass.Payments.csproj" />
+    <ProjectReference Include="..\Tallgrass.Rates\Tallgrass.Rates.csproj" />
+    <ProjectReference Include="..\Tallgrass.Reports\Tallgrass.Reports.csproj" />
+    <ProjectReference Include="..\Tallgrass.Notifications\Tallgrass.Notifications.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+{
+  "final-bill": [
+    {
+      "category": "rejected-input",
+      "reason": "move-out before cycle start is a data-entry error; legacy billed negative days. Modern refuses and the CSR re-keys.",
+      "owner": "billing-ops",
+      "ticket": "BILL-2297",
+      "expires": "2026-12-31"
+    }
+  ]
+}
